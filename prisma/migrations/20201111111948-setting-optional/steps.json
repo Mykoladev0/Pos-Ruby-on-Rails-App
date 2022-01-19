@@ -1,0 +1,172 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "location",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "location"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "location"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "\"\""
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "importData",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "importData"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "importData"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "false"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "includeDesc",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "includeDesc"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "includeDesc"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "false"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "includeImg",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "includeImg"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "includeImg"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "false"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "keepLevels",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "keepLevels"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "keepLevels"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "false"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "createdAt",
+      "arity": "Optional"
+    },
+    {
+      "tag": "UpdateField",
+      "model": "Settings",
+      "field": "updatedAt",
+      "arity": "Optional"
+    }
+  ]
+}

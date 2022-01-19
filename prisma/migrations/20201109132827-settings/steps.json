@@ -1,0 +1,155 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateModel",
+      "model": "Settings"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "storeId",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "storeId"
+        },
+        "directive": "unique"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "location",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "importData",
+      "type": "Boolean",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "includeDesc",
+      "type": "Boolean",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "includeImg",
+      "type": "Boolean",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "keepLevels",
+      "type": "Boolean",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "createdAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Settings",
+      "field": "updatedAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Settings",
+          "field": "updatedAt"
+        },
+        "directive": "updatedAt"
+      }
+    }
+  ]
+}
